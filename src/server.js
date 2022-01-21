@@ -4,6 +4,8 @@ const http = require("http");
 const PORT = process.env.PORT || 8000;
 const app = require("./app"); //express app is a listener
 
+//when module is first required - load the data so that our first
+//request in planet controller have access to the data
 const { loadPlanetsData } = require("./models/planets.model");
 
 //Take request listener function as argument, which responds to all

@@ -12,7 +12,8 @@ function isHabitablePlanet(planet) {
     planet["koi_prad"] < 1.6
   );
 }
-
+//We can wait for that promise to resolve before accepting any incoming request
+//from the controller
 function loadPlanetsData() {
   return new Promise((resolve, reject) => {
     //Happen asychronously
