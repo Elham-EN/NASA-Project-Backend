@@ -13,6 +13,12 @@ const launch = {
 
 launches.set(launch.fligjtNumber, launch);
 
+//Data Access function
+function getAllLaunches() {
+  //Convert Map to Array
+  return Array.from(launches.values());
+}
+
 module.exports = {
-  launches,
+  getAllLaunches,
 };
